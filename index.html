@@ -1797,8 +1797,7 @@ function renderHist() {
       list.appendChild(row);
     });
     s.appendChild(list);
-  }
-  } else {
+    } else {
     // check-ins
     const ciItems = [];
     Object.entries(db.checkins||{}).forEach(function([wk, ci]) {
@@ -1873,6 +1872,7 @@ function renderHist() {
       });
       s.appendChild(ciList);
     }
+  }
 
   s.appendChild(el('div', {style:'height:8px'}));
 }
